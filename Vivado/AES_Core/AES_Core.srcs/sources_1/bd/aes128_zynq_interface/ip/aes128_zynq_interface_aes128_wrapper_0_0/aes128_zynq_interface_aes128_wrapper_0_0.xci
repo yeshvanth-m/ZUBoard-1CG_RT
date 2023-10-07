@@ -1,0 +1,53 @@
+{
+  "schema": "xilinx.com:schema:json_instance:1.0",
+  "ip_inst": {
+    "xci_name": "aes128_zynq_interface_aes128_wrapper_0_0",
+    "cell_name": "aes128_wrapper_0",
+    "component_reference": "xilinx.com:module_ref:aes128_wrapper:1.0",
+    "ip_revision": "1",
+    "gen_directory": "../../../../../../AES_Core.gen/sources_1/bd/aes128_zynq_interface/ip/aes128_zynq_interface_aes128_wrapper_0_0",
+    "parameters": {
+      "component_parameters": {
+        "Component_Name": [ { "value": "aes128_zynq_interface_aes128_wrapper_0_0", "resolve_type": "user", "usage": "all" } ]
+      },
+      "project_parameters": {
+        "ARCHITECTURE": [ { "value": "zynquplus" } ],
+        "BASE_BOARD_PART": [ { "value": "avnet.com:zuboard_1cg:part0:1.0" } ],
+        "BOARD_CONNECTIONS": [ { "value": "" } ],
+        "DEVICE": [ { "value": "xczu1cg" } ],
+        "PACKAGE": [ { "value": "sbva484" } ],
+        "PREFHDL": [ { "value": "VERILOG" } ],
+        "SILICON_REVISION": [ { "value": "" } ],
+        "SIMULATOR_LANGUAGE": [ { "value": "MIXED" } ],
+        "SPEEDGRADE": [ { "value": "-1" } ],
+        "STATIC_POWER": [ { "value": "" } ],
+        "TEMPERATURE_GRADE": [ { "value": "E" } ]
+      },
+      "runtime_parameters": {
+        "IPCONTEXT": [ { "value": "IP_Integrator" } ],
+        "IPREVISION": [ { "value": "1" } ],
+        "MANAGED": [ { "value": "TRUE" } ],
+        "OUTPUTDIR": [ { "value": "../../../../../../AES_Core.gen/sources_1/bd/aes128_zynq_interface/ip/aes128_zynq_interface_aes128_wrapper_0_0" } ],
+        "SELECTEDSIMMODEL": [ { "value": "" } ],
+        "SHAREDDIR": [ { "value": "../../ipshared" } ],
+        "SWVERSION": [ { "value": "2023.1" } ],
+        "SYNTHESISFLOW": [ { "value": "OOC_HIERARCHICAL" } ]
+      }
+    },
+    "boundary": {
+      "ports": {
+        "aes128_clk_i": [ { "direction": "in" } ],
+        "aes128_ctrl_i": [ { "direction": "in", "size_left": "2", "size_right": "0" } ],
+        "aes128_data_word1_i": [ { "direction": "in", "size_left": "31", "size_right": "0" } ],
+        "aes128_data_word2_i": [ { "direction": "in", "size_left": "31", "size_right": "0" } ],
+        "aes128_data_word3_i": [ { "direction": "in", "size_left": "31", "size_right": "0" } ],
+        "aes128_data_word4_i": [ { "direction": "in", "size_left": "31", "size_right": "0" } ],
+        "aes128_data_word1_o": [ { "direction": "out", "size_left": "31", "size_right": "0" } ],
+        "aes128_data_word2_o": [ { "direction": "out", "size_left": "31", "size_right": "0" } ],
+        "aes128_data_word3_o": [ { "direction": "out", "size_left": "31", "size_right": "0" } ],
+        "aes128_data_word4_o": [ { "direction": "out", "size_left": "31", "size_right": "0" } ],
+        "aes128_stat_o": [ { "direction": "out", "size_left": "1", "size_right": "0" } ]
+      }
+    }
+  }
+}

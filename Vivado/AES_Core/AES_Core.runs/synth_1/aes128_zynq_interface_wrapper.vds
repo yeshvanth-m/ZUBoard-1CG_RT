@@ -1,0 +1,383 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Sat Oct  7 14:01:28 2023
+# Process ID: 14272
+# Current directory: E:/SW/Vivado_Projetcs/AES_Core/AES_Core.runs/synth_1
+# Command line: vivado.exe -log aes128_zynq_interface_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source aes128_zynq_interface_wrapper.tcl
+# Log file: E:/SW/Vivado_Projetcs/AES_Core/AES_Core.runs/synth_1/aes128_zynq_interface_wrapper.vds
+# Journal file: E:/SW/Vivado_Projetcs/AES_Core/AES_Core.runs/synth_1\vivado.jou
+# Running On: Yeshvanth-Workstation, OS: Windows, CPU Frequency: 3418 MHz, CPU Physical cores: 16, Host memory: 34115 MB
+#-----------------------------------------------------------
+source aes128_zynq_interface_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/SW/Xilinx/Vivado/2023.1/data/ip'.
+Command: read_checkpoint -auto_incremental -incremental E:/SW/Vivado_Projetcs/AES_Core/AES_Core.srcs/utils_1/imports/synth_1/aes128_zynq_interface_wrapper.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from E:/SW/Vivado_Projetcs/AES_Core/AES_Core.srcs/utils_1/imports/synth_1/aes128_zynq_interface_wrapper.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top aes128_zynq_interface_wrapper -part xczu1cg-sbva484-1-e
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu1cg'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu1cg'
+INFO: [Device 21-403] Loading part xczu1cg-sbva484-1-e
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 1348
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:03 . Memory (MB): peak = 1434.293 ; gain = 408.594
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'aes128_zynq_interface_wrapper' [E:/SW/Vivado_Projetcs/AES_Core/AES_Core.gen/sources_1/bd/aes128_zynq_interface/hdl/aes128_zynq_interface_wrapper.v:13]
+INFO: [Synth 8-6157] synthesizing module 'aes128_zynq_interface' [e:/SW/Vivado_Projetcs/AES_Core/AES_Core.gen/sources_1/bd/aes128_zynq_interface/synth/aes128_zynq_interface.v:13]
+INFO: [Synth 8-6157] synthesizing module 'aes128_zynq_interface_aes128_wrapper_0_0' [E:/SW/Vivado_Projetcs/AES_Core/AES_Core.runs/synth_1/.Xil/Vivado-14272-Yeshvanth-Workstation/realtime/aes128_zynq_interface_aes128_wrapper_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'aes128_zynq_interface_aes128_wrapper_0_0' (0#1) [E:/SW/Vivado_Projetcs/AES_Core/AES_Core.runs/synth_1/.Xil/Vivado-14272-Yeshvanth-Workstation/realtime/aes128_zynq_interface_aes128_wrapper_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'aes128_zynq_interface_axi_gpio_4_0' [E:/SW/Vivado_Projetcs/AES_Core/AES_Core.runs/synth_1/.Xil/Vivado-14272-Yeshvanth-Workstation/realtime/aes128_zynq_interface_axi_gpio_4_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'aes128_zynq_interface_axi_gpio_4_0' (0#1) [E:/SW/Vivado_Projetcs/AES_Core/AES_Core.runs/synth_1/.Xil/Vivado-14272-Yeshvanth-Workstation/realtime/aes128_zynq_interface_axi_gpio_4_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'aes128_zynq_interface_axi_gpio_2_0' [E:/SW/Vivado_Projetcs/AES_Core/AES_Core.runs/synth_1/.Xil/Vivado-14272-Yeshvanth-Workstation/realtime/aes128_zynq_interface_axi_gpio_2_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'aes128_zynq_interface_axi_gpio_2_0' (0#1) [E:/SW/Vivado_Projetcs/AES_Core/AES_Core.runs/synth_1/.Xil/Vivado-14272-Yeshvanth-Workstation/realtime/aes128_zynq_interface_axi_gpio_2_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'aes128_zynq_interface_axi_gpio_0_0' [E:/SW/Vivado_Projetcs/AES_Core/AES_Core.runs/synth_1/.Xil/Vivado-14272-Yeshvanth-Workstation/realtime/aes128_zynq_interface_axi_gpio_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'aes128_zynq_interface_axi_gpio_0_0' (0#1) [E:/SW/Vivado_Projetcs/AES_Core/AES_Core.runs/synth_1/.Xil/Vivado-14272-Yeshvanth-Workstation/realtime/aes128_zynq_interface_axi_gpio_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'aes128_zynq_interface_axi_gpio_3_0' [E:/SW/Vivado_Projetcs/AES_Core/AES_Core.runs/synth_1/.Xil/Vivado-14272-Yeshvanth-Workstation/realtime/aes128_zynq_interface_axi_gpio_3_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'aes128_zynq_interface_axi_gpio_3_0' (0#1) [E:/SW/Vivado_Projetcs/AES_Core/AES_Core.runs/synth_1/.Xil/Vivado-14272-Yeshvanth-Workstation/realtime/aes128_zynq_interface_axi_gpio_3_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'aes128_zynq_interface_axi_gpio_1_0' [E:/SW/Vivado_Projetcs/AES_Core/AES_Core.runs/synth_1/.Xil/Vivado-14272-Yeshvanth-Workstation/realtime/aes128_zynq_interface_axi_gpio_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'aes128_zynq_interface_axi_gpio_1_0' (0#1) [E:/SW/Vivado_Projetcs/AES_Core/AES_Core.runs/synth_1/.Xil/Vivado-14272-Yeshvanth-Workstation/realtime/aes128_zynq_interface_axi_gpio_1_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'aes128_zynq_interface_ps8_0_axi_periph_0' [e:/SW/Vivado_Projetcs/AES_Core/AES_Core.gen/sources_1/bd/aes128_zynq_interface/synth/aes128_zynq_interface.v:576]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_1G9F7QJ' [e:/SW/Vivado_Projetcs/AES_Core/AES_Core.gen/sources_1/bd/aes128_zynq_interface/synth/aes128_zynq_interface.v:1732]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_1G9F7QJ' (0#1) [e:/SW/Vivado_Projetcs/AES_Core/AES_Core.gen/sources_1/bd/aes128_zynq_interface/synth/aes128_zynq_interface.v:1732]
+INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_1DLDET6' [e:/SW/Vivado_Projetcs/AES_Core/AES_Core.gen/sources_1/bd/aes128_zynq_interface/synth/aes128_zynq_interface.v:1864]
+INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_1DLDET6' (0#1) [e:/SW/Vivado_Projetcs/AES_Core/AES_Core.gen/sources_1/bd/aes128_zynq_interface/synth/aes128_zynq_interface.v:1864]
+INFO: [Synth 8-6157] synthesizing module 'm02_couplers_imp_18U02TL' [e:/SW/Vivado_Projetcs/AES_Core/AES_Core.gen/sources_1/bd/aes128_zynq_interface/synth/aes128_zynq_interface.v:1996]
+INFO: [Synth 8-6155] done synthesizing module 'm02_couplers_imp_18U02TL' (0#1) [e:/SW/Vivado_Projetcs/AES_Core/AES_Core.gen/sources_1/bd/aes128_zynq_interface/synth/aes128_zynq_interface.v:1996]
+INFO: [Synth 8-6157] synthesizing module 'm03_couplers_imp_1COIF14' [e:/SW/Vivado_Projetcs/AES_Core/AES_Core.gen/sources_1/bd/aes128_zynq_interface/synth/aes128_zynq_interface.v:2128]
+INFO: [Synth 8-6155] done synthesizing module 'm03_couplers_imp_1COIF14' (0#1) [e:/SW/Vivado_Projetcs/AES_Core/AES_Core.gen/sources_1/bd/aes128_zynq_interface/synth/aes128_zynq_interface.v:2128]
+INFO: [Synth 8-6157] synthesizing module 'm04_couplers_imp_11O6IEN' [e:/SW/Vivado_Projetcs/AES_Core/AES_Core.gen/sources_1/bd/aes128_zynq_interface/synth/aes128_zynq_interface.v:2260]
+INFO: [Synth 8-6155] done synthesizing module 'm04_couplers_imp_11O6IEN' (0#1) [e:/SW/Vivado_Projetcs/AES_Core/AES_Core.gen/sources_1/bd/aes128_zynq_interface/synth/aes128_zynq_interface.v:2260]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_1H3EISQ' [e:/SW/Vivado_Projetcs/AES_Core/AES_Core.gen/sources_1/bd/aes128_zynq_interface/synth/aes128_zynq_interface.v:2392]
+INFO: [Synth 8-6157] synthesizing module 'aes128_zynq_interface_auto_ds_0' [E:/SW/Vivado_Projetcs/AES_Core/AES_Core.runs/synth_1/.Xil/Vivado-14272-Yeshvanth-Workstation/realtime/aes128_zynq_interface_auto_ds_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'aes128_zynq_interface_auto_ds_0' (0#1) [E:/SW/Vivado_Projetcs/AES_Core/AES_Core.runs/synth_1/.Xil/Vivado-14272-Yeshvanth-Workstation/realtime/aes128_zynq_interface_auto_ds_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'aes128_zynq_interface_auto_pc_0' [E:/SW/Vivado_Projetcs/AES_Core/AES_Core.runs/synth_1/.Xil/Vivado-14272-Yeshvanth-Workstation/realtime/aes128_zynq_interface_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'aes128_zynq_interface_auto_pc_0' (0#1) [E:/SW/Vivado_Projetcs/AES_Core/AES_Core.runs/synth_1/.Xil/Vivado-14272-Yeshvanth-Workstation/realtime/aes128_zynq_interface_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_1H3EISQ' (0#1) [e:/SW/Vivado_Projetcs/AES_Core/AES_Core.gen/sources_1/bd/aes128_zynq_interface/synth/aes128_zynq_interface.v:2392]
+INFO: [Synth 8-6157] synthesizing module 's01_couplers_imp_1DBDAIJ' [e:/SW/Vivado_Projetcs/AES_Core/AES_Core.gen/sources_1/bd/aes128_zynq_interface/synth/aes128_zynq_interface.v:2802]
+INFO: [Synth 8-6157] synthesizing module 'aes128_zynq_interface_auto_ds_1' [E:/SW/Vivado_Projetcs/AES_Core/AES_Core.runs/synth_1/.Xil/Vivado-14272-Yeshvanth-Workstation/realtime/aes128_zynq_interface_auto_ds_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'aes128_zynq_interface_auto_ds_1' (0#1) [E:/SW/Vivado_Projetcs/AES_Core/AES_Core.runs/synth_1/.Xil/Vivado-14272-Yeshvanth-Workstation/realtime/aes128_zynq_interface_auto_ds_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'aes128_zynq_interface_auto_pc_1' [E:/SW/Vivado_Projetcs/AES_Core/AES_Core.runs/synth_1/.Xil/Vivado-14272-Yeshvanth-Workstation/realtime/aes128_zynq_interface_auto_pc_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'aes128_zynq_interface_auto_pc_1' (0#1) [E:/SW/Vivado_Projetcs/AES_Core/AES_Core.runs/synth_1/.Xil/Vivado-14272-Yeshvanth-Workstation/realtime/aes128_zynq_interface_auto_pc_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 's01_couplers_imp_1DBDAIJ' (0#1) [e:/SW/Vivado_Projetcs/AES_Core/AES_Core.gen/sources_1/bd/aes128_zynq_interface/synth/aes128_zynq_interface.v:2802]
+INFO: [Synth 8-6157] synthesizing module 'aes128_zynq_interface_xbar_0' [E:/SW/Vivado_Projetcs/AES_Core/AES_Core.runs/synth_1/.Xil/Vivado-14272-Yeshvanth-Workstation/realtime/aes128_zynq_interface_xbar_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'aes128_zynq_interface_xbar_0' (0#1) [E:/SW/Vivado_Projetcs/AES_Core/AES_Core.runs/synth_1/.Xil/Vivado-14272-Yeshvanth-Workstation/realtime/aes128_zynq_interface_xbar_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'aes128_zynq_interface_xbar_0' is unconnected for instance 'xbar' [e:/SW/Vivado_Projetcs/AES_Core/AES_Core.gen/sources_1/bd/aes128_zynq_interface/synth/aes128_zynq_interface.v:1691]
+WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'aes128_zynq_interface_xbar_0' is unconnected for instance 'xbar' [e:/SW/Vivado_Projetcs/AES_Core/AES_Core.gen/sources_1/bd/aes128_zynq_interface/synth/aes128_zynq_interface.v:1691]
+WARNING: [Synth 8-7023] instance 'xbar' of module 'aes128_zynq_interface_xbar_0' has 40 connections declared, but only 38 given [e:/SW/Vivado_Projetcs/AES_Core/AES_Core.gen/sources_1/bd/aes128_zynq_interface/synth/aes128_zynq_interface.v:1691]
+INFO: [Synth 8-6155] done synthesizing module 'aes128_zynq_interface_ps8_0_axi_periph_0' (0#1) [e:/SW/Vivado_Projetcs/AES_Core/AES_Core.gen/sources_1/bd/aes128_zynq_interface/synth/aes128_zynq_interface.v:576]
+INFO: [Synth 8-6157] synthesizing module 'aes128_zynq_interface_rst_ps8_0_100M_0' [E:/SW/Vivado_Projetcs/AES_Core/AES_Core.runs/synth_1/.Xil/Vivado-14272-Yeshvanth-Workstation/realtime/aes128_zynq_interface_rst_ps8_0_100M_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'aes128_zynq_interface_rst_ps8_0_100M_0' (0#1) [E:/SW/Vivado_Projetcs/AES_Core/AES_Core.runs/synth_1/.Xil/Vivado-14272-Yeshvanth-Workstation/realtime/aes128_zynq_interface_rst_ps8_0_100M_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'aes128_zynq_interface_rst_ps8_0_100M_0' is unconnected for instance 'rst_ps8_0_100M' [e:/SW/Vivado_Projetcs/AES_Core/AES_Core.gen/sources_1/bd/aes128_zynq_interface/synth/aes128_zynq_interface.v:488]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'aes128_zynq_interface_rst_ps8_0_100M_0' is unconnected for instance 'rst_ps8_0_100M' [e:/SW/Vivado_Projetcs/AES_Core/AES_Core.gen/sources_1/bd/aes128_zynq_interface/synth/aes128_zynq_interface.v:488]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'aes128_zynq_interface_rst_ps8_0_100M_0' is unconnected for instance 'rst_ps8_0_100M' [e:/SW/Vivado_Projetcs/AES_Core/AES_Core.gen/sources_1/bd/aes128_zynq_interface/synth/aes128_zynq_interface.v:488]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'aes128_zynq_interface_rst_ps8_0_100M_0' is unconnected for instance 'rst_ps8_0_100M' [e:/SW/Vivado_Projetcs/AES_Core/AES_Core.gen/sources_1/bd/aes128_zynq_interface/synth/aes128_zynq_interface.v:488]
+WARNING: [Synth 8-7023] instance 'rst_ps8_0_100M' of module 'aes128_zynq_interface_rst_ps8_0_100M_0' has 10 connections declared, but only 6 given [e:/SW/Vivado_Projetcs/AES_Core/AES_Core.gen/sources_1/bd/aes128_zynq_interface/synth/aes128_zynq_interface.v:488]
+INFO: [Synth 8-6157] synthesizing module 'aes128_zynq_interface_zynq_ultra_ps_e_0_0' [E:/SW/Vivado_Projetcs/AES_Core/AES_Core.runs/synth_1/.Xil/Vivado-14272-Yeshvanth-Workstation/realtime/aes128_zynq_interface_zynq_ultra_ps_e_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'aes128_zynq_interface_zynq_ultra_ps_e_0_0' (0#1) [E:/SW/Vivado_Projetcs/AES_Core/AES_Core.runs/synth_1/.Xil/Vivado-14272-Yeshvanth-Workstation/realtime/aes128_zynq_interface_zynq_ultra_ps_e_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'maxigp0_awuser' of module 'aes128_zynq_interface_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [e:/SW/Vivado_Projetcs/AES_Core/AES_Core.gen/sources_1/bd/aes128_zynq_interface/synth/aes128_zynq_interface.v:495]
+WARNING: [Synth 8-7071] port 'maxigp0_aruser' of module 'aes128_zynq_interface_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [e:/SW/Vivado_Projetcs/AES_Core/AES_Core.gen/sources_1/bd/aes128_zynq_interface/synth/aes128_zynq_interface.v:495]
+WARNING: [Synth 8-7071] port 'maxigp1_awuser' of module 'aes128_zynq_interface_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [e:/SW/Vivado_Projetcs/AES_Core/AES_Core.gen/sources_1/bd/aes128_zynq_interface/synth/aes128_zynq_interface.v:495]
+WARNING: [Synth 8-7071] port 'maxigp1_aruser' of module 'aes128_zynq_interface_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [e:/SW/Vivado_Projetcs/AES_Core/AES_Core.gen/sources_1/bd/aes128_zynq_interface/synth/aes128_zynq_interface.v:495]
+WARNING: [Synth 8-7023] instance 'zynq_ultra_ps_e_0' of module 'aes128_zynq_interface_zynq_ultra_ps_e_0_0' has 82 connections declared, but only 78 given [e:/SW/Vivado_Projetcs/AES_Core/AES_Core.gen/sources_1/bd/aes128_zynq_interface/synth/aes128_zynq_interface.v:495]
+INFO: [Synth 8-6155] done synthesizing module 'aes128_zynq_interface' (0#1) [e:/SW/Vivado_Projetcs/AES_Core/AES_Core.gen/sources_1/bd/aes128_zynq_interface/synth/aes128_zynq_interface.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'aes128_zynq_interface_wrapper' (0#1) [E:/SW/Vivado_Projetcs/AES_Core/AES_Core.gen/sources_1/bd/aes128_zynq_interface/hdl/aes128_zynq_interface_wrapper.v:13]
+WARNING: [Synth 8-7129] Port M_ACLK in module s01_couplers_imp_1DBDAIJ is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module s01_couplers_imp_1DBDAIJ is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLK in module s00_couplers_imp_1H3EISQ is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module s00_couplers_imp_1H3EISQ is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLK in module m04_couplers_imp_11O6IEN is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module m04_couplers_imp_11O6IEN is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ACLK in module m04_couplers_imp_11O6IEN is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ARESETN in module m04_couplers_imp_11O6IEN is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLK in module m03_couplers_imp_1COIF14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module m03_couplers_imp_1COIF14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ACLK in module m03_couplers_imp_1COIF14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ARESETN in module m03_couplers_imp_1COIF14 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLK in module m02_couplers_imp_18U02TL is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module m02_couplers_imp_18U02TL is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ACLK in module m02_couplers_imp_18U02TL is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ARESETN in module m02_couplers_imp_18U02TL is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLK in module m01_couplers_imp_1DLDET6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module m01_couplers_imp_1DLDET6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ACLK in module m01_couplers_imp_1DLDET6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ARESETN in module m01_couplers_imp_1DLDET6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ACLK in module m00_couplers_imp_1G9F7QJ is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module m00_couplers_imp_1G9F7QJ is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ACLK in module m00_couplers_imp_1G9F7QJ is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ARESETN in module m00_couplers_imp_1G9F7QJ is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_ACLK in module aes128_zynq_interface_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_ARESETN in module aes128_zynq_interface_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M01_ACLK in module aes128_zynq_interface_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M01_ARESETN in module aes128_zynq_interface_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M02_ACLK in module aes128_zynq_interface_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M02_ARESETN in module aes128_zynq_interface_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M03_ACLK in module aes128_zynq_interface_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M03_ARESETN in module aes128_zynq_interface_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M04_ACLK in module aes128_zynq_interface_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M04_ARESETN in module aes128_zynq_interface_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S00_ACLK in module aes128_zynq_interface_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S00_ARESETN in module aes128_zynq_interface_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S01_ACLK in module aes128_zynq_interface_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S01_ARESETN in module aes128_zynq_interface_ps8_0_axi_periph_0 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 1536.184 ; gain = 510.484
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 1536.184 ; gain = 510.484
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 1536.184 ; gain = 510.484
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.031 . Memory (MB): peak = 1536.184 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [e:/SW/Vivado_Projetcs/AES_Core/AES_Core.gen/sources_1/bd/aes128_zynq_interface/ip/aes128_zynq_interface_zynq_ultra_ps_e_0_0/aes128_zynq_interface_zynq_ultra_ps_e_0_0/aes128_zynq_interface_zynq_ultra_ps_e_0_0_in_context.xdc] for cell 'aes128_zynq_interface_i/zynq_ultra_ps_e_0'
+Finished Parsing XDC File [e:/SW/Vivado_Projetcs/AES_Core/AES_Core.gen/sources_1/bd/aes128_zynq_interface/ip/aes128_zynq_interface_zynq_ultra_ps_e_0_0/aes128_zynq_interface_zynq_ultra_ps_e_0_0/aes128_zynq_interface_zynq_ultra_ps_e_0_0_in_context.xdc] for cell 'aes128_zynq_interface_i/zynq_ultra_ps_e_0'
+Parsing XDC File [e:/SW/Vivado_Projetcs/AES_Core/AES_Core.gen/sources_1/bd/aes128_zynq_interface/ip/aes128_zynq_interface_axi_gpio_0_0/aes128_zynq_interface_axi_gpio_0_0/aes128_zynq_interface_axi_gpio_1_0_in_context.xdc] for cell 'aes128_zynq_interface_i/axi_gpio_qword1_o'
+Finished Parsing XDC File [e:/SW/Vivado_Projetcs/AES_Core/AES_Core.gen/sources_1/bd/aes128_zynq_interface/ip/aes128_zynq_interface_axi_gpio_0_0/aes128_zynq_interface_axi_gpio_0_0/aes128_zynq_interface_axi_gpio_1_0_in_context.xdc] for cell 'aes128_zynq_interface_i/axi_gpio_qword1_o'
+Parsing XDC File [e:/SW/Vivado_Projetcs/AES_Core/AES_Core.gen/sources_1/bd/aes128_zynq_interface/ip/aes128_zynq_interface_axi_gpio_1_0/aes128_zynq_interface_axi_gpio_1_0/aes128_zynq_interface_axi_gpio_1_0_in_context.xdc] for cell 'aes128_zynq_interface_i/axi_gpio_qword2_o'
+Finished Parsing XDC File [e:/SW/Vivado_Projetcs/AES_Core/AES_Core.gen/sources_1/bd/aes128_zynq_interface/ip/aes128_zynq_interface_axi_gpio_1_0/aes128_zynq_interface_axi_gpio_1_0/aes128_zynq_interface_axi_gpio_1_0_in_context.xdc] for cell 'aes128_zynq_interface_i/axi_gpio_qword2_o'
+Parsing XDC File [e:/SW/Vivado_Projetcs/AES_Core/AES_Core.gen/sources_1/bd/aes128_zynq_interface/ip/aes128_zynq_interface_axi_gpio_2_0/aes128_zynq_interface_axi_gpio_2_0/aes128_zynq_interface_axi_gpio_3_0_in_context.xdc] for cell 'aes128_zynq_interface_i/axi_gpio_qword1_i'
+Finished Parsing XDC File [e:/SW/Vivado_Projetcs/AES_Core/AES_Core.gen/sources_1/bd/aes128_zynq_interface/ip/aes128_zynq_interface_axi_gpio_2_0/aes128_zynq_interface_axi_gpio_2_0/aes128_zynq_interface_axi_gpio_3_0_in_context.xdc] for cell 'aes128_zynq_interface_i/axi_gpio_qword1_i'
+Parsing XDC File [e:/SW/Vivado_Projetcs/AES_Core/AES_Core.gen/sources_1/bd/aes128_zynq_interface/ip/aes128_zynq_interface_axi_gpio_3_0/aes128_zynq_interface_axi_gpio_3_0/aes128_zynq_interface_axi_gpio_3_0_in_context.xdc] for cell 'aes128_zynq_interface_i/axi_gpio_qword2_i'
+Finished Parsing XDC File [e:/SW/Vivado_Projetcs/AES_Core/AES_Core.gen/sources_1/bd/aes128_zynq_interface/ip/aes128_zynq_interface_axi_gpio_3_0/aes128_zynq_interface_axi_gpio_3_0/aes128_zynq_interface_axi_gpio_3_0_in_context.xdc] for cell 'aes128_zynq_interface_i/axi_gpio_qword2_i'
+Parsing XDC File [e:/SW/Vivado_Projetcs/AES_Core/AES_Core.gen/sources_1/bd/aes128_zynq_interface/ip/aes128_zynq_interface_axi_gpio_4_0/aes128_zynq_interface_axi_gpio_4_0/aes128_zynq_interface_axi_gpio_4_0_in_context.xdc] for cell 'aes128_zynq_interface_i/axi_gpio_ctrl_stat'
+Finished Parsing XDC File [e:/SW/Vivado_Projetcs/AES_Core/AES_Core.gen/sources_1/bd/aes128_zynq_interface/ip/aes128_zynq_interface_axi_gpio_4_0/aes128_zynq_interface_axi_gpio_4_0/aes128_zynq_interface_axi_gpio_4_0_in_context.xdc] for cell 'aes128_zynq_interface_i/axi_gpio_ctrl_stat'
+Parsing XDC File [e:/SW/Vivado_Projetcs/AES_Core/AES_Core.gen/sources_1/bd/aes128_zynq_interface/ip/aes128_zynq_interface_xbar_0/aes128_zynq_interface_xbar_0/aes128_zynq_interface_xbar_0_in_context.xdc] for cell 'aes128_zynq_interface_i/ps8_0_axi_periph/xbar'
+Finished Parsing XDC File [e:/SW/Vivado_Projetcs/AES_Core/AES_Core.gen/sources_1/bd/aes128_zynq_interface/ip/aes128_zynq_interface_xbar_0/aes128_zynq_interface_xbar_0/aes128_zynq_interface_xbar_0_in_context.xdc] for cell 'aes128_zynq_interface_i/ps8_0_axi_periph/xbar'
+Parsing XDC File [e:/SW/Vivado_Projetcs/AES_Core/AES_Core.gen/sources_1/bd/aes128_zynq_interface/ip/aes128_zynq_interface_auto_ds_0/aes128_zynq_interface_auto_ds_0/aes128_zynq_interface_auto_ds_0_in_context.xdc] for cell 'aes128_zynq_interface_i/ps8_0_axi_periph/s00_couplers/auto_ds'
+Finished Parsing XDC File [e:/SW/Vivado_Projetcs/AES_Core/AES_Core.gen/sources_1/bd/aes128_zynq_interface/ip/aes128_zynq_interface_auto_ds_0/aes128_zynq_interface_auto_ds_0/aes128_zynq_interface_auto_ds_0_in_context.xdc] for cell 'aes128_zynq_interface_i/ps8_0_axi_periph/s00_couplers/auto_ds'
+Parsing XDC File [e:/SW/Vivado_Projetcs/AES_Core/AES_Core.gen/sources_1/bd/aes128_zynq_interface/ip/aes128_zynq_interface_auto_pc_0/aes128_zynq_interface_auto_pc_0/aes128_zynq_interface_auto_pc_1_in_context.xdc] for cell 'aes128_zynq_interface_i/ps8_0_axi_periph/s00_couplers/auto_pc'
+Finished Parsing XDC File [e:/SW/Vivado_Projetcs/AES_Core/AES_Core.gen/sources_1/bd/aes128_zynq_interface/ip/aes128_zynq_interface_auto_pc_0/aes128_zynq_interface_auto_pc_0/aes128_zynq_interface_auto_pc_1_in_context.xdc] for cell 'aes128_zynq_interface_i/ps8_0_axi_periph/s00_couplers/auto_pc'
+Parsing XDC File [e:/SW/Vivado_Projetcs/AES_Core/AES_Core.gen/sources_1/bd/aes128_zynq_interface/ip/aes128_zynq_interface_auto_ds_1/aes128_zynq_interface_auto_ds_1/aes128_zynq_interface_auto_ds_0_in_context.xdc] for cell 'aes128_zynq_interface_i/ps8_0_axi_periph/s01_couplers/auto_ds'
+Finished Parsing XDC File [e:/SW/Vivado_Projetcs/AES_Core/AES_Core.gen/sources_1/bd/aes128_zynq_interface/ip/aes128_zynq_interface_auto_ds_1/aes128_zynq_interface_auto_ds_1/aes128_zynq_interface_auto_ds_0_in_context.xdc] for cell 'aes128_zynq_interface_i/ps8_0_axi_periph/s01_couplers/auto_ds'
+Parsing XDC File [e:/SW/Vivado_Projetcs/AES_Core/AES_Core.gen/sources_1/bd/aes128_zynq_interface/ip/aes128_zynq_interface_auto_pc_1/aes128_zynq_interface_auto_pc_1/aes128_zynq_interface_auto_pc_1_in_context.xdc] for cell 'aes128_zynq_interface_i/ps8_0_axi_periph/s01_couplers/auto_pc'
+Finished Parsing XDC File [e:/SW/Vivado_Projetcs/AES_Core/AES_Core.gen/sources_1/bd/aes128_zynq_interface/ip/aes128_zynq_interface_auto_pc_1/aes128_zynq_interface_auto_pc_1/aes128_zynq_interface_auto_pc_1_in_context.xdc] for cell 'aes128_zynq_interface_i/ps8_0_axi_periph/s01_couplers/auto_pc'
+Parsing XDC File [e:/SW/Vivado_Projetcs/AES_Core/AES_Core.gen/sources_1/bd/aes128_zynq_interface/ip/aes128_zynq_interface_rst_ps8_0_100M_0/aes128_zynq_interface_rst_ps8_0_100M_0/aes128_zynq_interface_rst_ps8_0_100M_0_in_context.xdc] for cell 'aes128_zynq_interface_i/rst_ps8_0_100M'
+Finished Parsing XDC File [e:/SW/Vivado_Projetcs/AES_Core/AES_Core.gen/sources_1/bd/aes128_zynq_interface/ip/aes128_zynq_interface_rst_ps8_0_100M_0/aes128_zynq_interface_rst_ps8_0_100M_0/aes128_zynq_interface_rst_ps8_0_100M_0_in_context.xdc] for cell 'aes128_zynq_interface_i/rst_ps8_0_100M'
+Parsing XDC File [e:/SW/Vivado_Projetcs/AES_Core/AES_Core.gen/sources_1/bd/aes128_zynq_interface/ip/aes128_zynq_interface_aes128_wrapper_0_0/aes128_zynq_interface_aes128_wrapper_0_0/aes128_zynq_interface_aes128_wrapper_0_0_in_context.xdc] for cell 'aes128_zynq_interface_i/aes128_wrapper_0'
+Finished Parsing XDC File [e:/SW/Vivado_Projetcs/AES_Core/AES_Core.gen/sources_1/bd/aes128_zynq_interface/ip/aes128_zynq_interface_aes128_wrapper_0_0/aes128_zynq_interface_aes128_wrapper_0_0/aes128_zynq_interface_aes128_wrapper_0_0_in_context.xdc] for cell 'aes128_zynq_interface_i/aes128_wrapper_0'
+Parsing XDC File [E:/SW/Vivado_Projetcs/AES_Core/AES_Core.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [E:/SW/Vivado_Projetcs/AES_Core/AES_Core.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1543.691 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1543.691 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 1543.691 ; gain = 517.992
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu1cg-sbva484-1-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 1543.691 ; gain = 517.992
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for aes128_zynq_interface_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for aes128_zynq_interface_i/zynq_ultra_ps_e_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for aes128_zynq_interface_i/axi_gpio_qword1_o. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for aes128_zynq_interface_i/axi_gpio_qword2_o. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for aes128_zynq_interface_i/axi_gpio_qword1_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for aes128_zynq_interface_i/axi_gpio_qword2_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for aes128_zynq_interface_i/axi_gpio_ctrl_stat. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for aes128_zynq_interface_i/ps8_0_axi_periph/xbar. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for aes128_zynq_interface_i/ps8_0_axi_periph/s00_couplers/auto_ds. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for aes128_zynq_interface_i/ps8_0_axi_periph/s00_couplers/auto_pc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for aes128_zynq_interface_i/ps8_0_axi_periph/s01_couplers/auto_ds. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for aes128_zynq_interface_i/ps8_0_axi_periph/s01_couplers/auto_pc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for aes128_zynq_interface_i/ps8_0_axi_periph. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for aes128_zynq_interface_i/rst_ps8_0_100M. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for aes128_zynq_interface_i/aes128_wrapper_0. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 1543.691 ; gain = 517.992
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 1543.691 ; gain = 517.992
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 216 (col length:72)
+BRAMs: 216 (col length: RAMB18 72 RAMB36 36)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port M00_ACLK in module aes128_zynq_interface_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_ARESETN in module aes128_zynq_interface_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M01_ACLK in module aes128_zynq_interface_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M01_ARESETN in module aes128_zynq_interface_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M02_ACLK in module aes128_zynq_interface_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M02_ARESETN in module aes128_zynq_interface_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M03_ACLK in module aes128_zynq_interface_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M03_ARESETN in module aes128_zynq_interface_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M04_ACLK in module aes128_zynq_interface_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M04_ARESETN in module aes128_zynq_interface_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S00_ACLK in module aes128_zynq_interface_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S00_ARESETN in module aes128_zynq_interface_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S01_ACLK in module aes128_zynq_interface_ps8_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S01_ARESETN in module aes128_zynq_interface_ps8_0_axi_periph_0 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:06 ; elapsed = 00:00:11 . Memory (MB): peak = 1543.691 ; gain = 517.992
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:07 ; elapsed = 00:00:14 . Memory (MB): peak = 1653.406 ; gain = 627.707
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:14 . Memory (MB): peak = 1653.406 ; gain = 627.707
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:07 ; elapsed = 00:00:14 . Memory (MB): peak = 1664.496 ; gain = 638.797
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:09 ; elapsed = 00:00:16 . Memory (MB): peak = 1679.293 ; gain = 653.594
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:09 ; elapsed = 00:00:16 . Memory (MB): peak = 1679.293 ; gain = 653.594
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:09 ; elapsed = 00:00:16 . Memory (MB): peak = 1679.293 ; gain = 653.594
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:09 ; elapsed = 00:00:16 . Memory (MB): peak = 1679.293 ; gain = 653.594
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:16 . Memory (MB): peak = 1679.293 ; gain = 653.594
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:09 ; elapsed = 00:00:16 . Memory (MB): peak = 1679.293 ; gain = 653.594
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+------------------------------------------+----------+
+|      |BlackBox name                             |Instances |
++------+------------------------------------------+----------+
+|1     |aes128_zynq_interface_xbar_0              |         1|
+|2     |aes128_zynq_interface_auto_ds_0           |         1|
+|3     |aes128_zynq_interface_auto_pc_0           |         1|
+|4     |aes128_zynq_interface_auto_ds_1           |         1|
+|5     |aes128_zynq_interface_auto_pc_1           |         1|
+|6     |aes128_zynq_interface_aes128_wrapper_0_0  |         1|
+|7     |aes128_zynq_interface_axi_gpio_4_0        |         1|
+|8     |aes128_zynq_interface_axi_gpio_2_0        |         1|
+|9     |aes128_zynq_interface_axi_gpio_0_0        |         1|
+|10    |aes128_zynq_interface_axi_gpio_3_0        |         1|
+|11    |aes128_zynq_interface_axi_gpio_1_0        |         1|
+|12    |aes128_zynq_interface_rst_ps8_0_100M_0    |         1|
+|13    |aes128_zynq_interface_zynq_ultra_ps_e_0_0 |         1|
++------+------------------------------------------+----------+
+
+Report Cell Usage: 
++------+----------------------------------------+------+
+|      |Cell                                    |Count |
++------+----------------------------------------+------+
+|1     |aes128_zynq_interface_aes128_wrapper_0  |     1|
+|2     |aes128_zynq_interface_auto_ds           |     2|
+|4     |aes128_zynq_interface_auto_pc           |     2|
+|6     |aes128_zynq_interface_axi_gpio_0        |     1|
+|7     |aes128_zynq_interface_axi_gpio_1        |     1|
+|8     |aes128_zynq_interface_axi_gpio_2        |     1|
+|9     |aes128_zynq_interface_axi_gpio_3        |     1|
+|10    |aes128_zynq_interface_axi_gpio_4        |     1|
+|11    |aes128_zynq_interface_rst_ps8_0_100M    |     1|
+|12    |aes128_zynq_interface_xbar              |     1|
+|13    |aes128_zynq_interface_zynq_ultra_ps_e_0 |     1|
++------+----------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:09 ; elapsed = 00:00:16 . Memory (MB): peak = 1679.293 ; gain = 653.594
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 15 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:05 ; elapsed = 00:00:13 . Memory (MB): peak = 1679.293 ; gain = 646.086
+Synthesis Optimization Complete : Time (s): cpu = 00:00:09 ; elapsed = 00:00:16 . Memory (MB): peak = 1679.293 ; gain = 653.594
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 1679.293 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1718.047 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: d9394225
+INFO: [Common 17-83] Releasing license: Synthesis
+68 Infos, 66 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:19 . Memory (MB): peak = 1723.039 ; gain = 1183.609
+INFO: [Common 17-1381] The checkpoint 'E:/SW/Vivado_Projetcs/AES_Core/AES_Core.runs/synth_1/aes128_zynq_interface_wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file aes128_zynq_interface_wrapper_utilization_synth.rpt -pb aes128_zynq_interface_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Oct  7 14:01:56 2023...

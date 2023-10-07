@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Fri Oct  6 21:28:01 2023
+# Process ID: 9372
+# Current directory: E:/SW/Vivado_Projetcs/AES_Core/AES_Core.runs/aes128_zynq_interface_axi_gpio_1_0_synth_1
+# Command line: vivado.exe -log aes128_zynq_interface_axi_gpio_1_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source aes128_zynq_interface_axi_gpio_1_0.tcl
+# Log file: E:/SW/Vivado_Projetcs/AES_Core/AES_Core.runs/aes128_zynq_interface_axi_gpio_1_0_synth_1/aes128_zynq_interface_axi_gpio_1_0.vds
+# Journal file: E:/SW/Vivado_Projetcs/AES_Core/AES_Core.runs/aes128_zynq_interface_axi_gpio_1_0_synth_1\vivado.jou
+# Running On: Yeshvanth-Workstation, OS: Windows, CPU Frequency: 3418 MHz, CPU Physical cores: 16, Host memory: 34115 MB
+#-----------------------------------------------------------
+source aes128_zynq_interface_axi_gpio_1_0.tcl -notrace

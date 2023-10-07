@@ -1,0 +1,45 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.594724",
+   "Default View_TopLeft":"-114,3",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.5.8 2022-09-21 7111 VDI=41 GEI=38 GUI=JA:10.0 threadsafe
+#  -string -flagsOSRD
+preplace inst zynq_ultra_ps_e_0 -pg 1 -lvl 1 -x 330 -y 290 -defaultsOSRD
+preplace inst axi_gpio_qword1_o -pg 1 -lvl 3 -x 1130 -y 570 -defaultsOSRD
+preplace inst axi_gpio_qword2_o -pg 1 -lvl 3 -x 1130 -y 750 -defaultsOSRD
+preplace inst axi_gpio_qword1_i -pg 1 -lvl 3 -x 1130 -y 90 -defaultsOSRD
+preplace inst axi_gpio_qword2_i -pg 1 -lvl 3 -x 1130 -y 250 -defaultsOSRD
+preplace inst axi_gpio_ctrl_stat -pg 1 -lvl 3 -x 1130 -y 410 -defaultsOSRD
+preplace inst ps8_0_axi_periph -pg 1 -lvl 2 -x 800 -y 430 -defaultsOSRD
+preplace inst rst_ps8_0_100M -pg 1 -lvl 1 -x 330 -y 490 -defaultsOSRD
+preplace inst aes128_wrapper_0 -pg 1 -lvl 4 -x 1530 -y 570 -defaultsOSRD
+preplace netloc aes128_wrapper_0_aes128_data_word1_o 1 3 2 NJ 80 1790
+preplace netloc aes128_wrapper_0_aes128_data_word2_o 1 3 2 NJ 120 1780
+preplace netloc aes128_wrapper_0_aes128_data_word3_o 1 3 2 NJ 240 1770
+preplace netloc aes128_wrapper_0_aes128_data_word4_o 1 3 2 NJ 280 1760
+preplace netloc aes128_wrapper_0_aes128_stat_o 1 3 2 N 440 1750
+preplace netloc axi_gpio_ctrl_stat_gpio_io_o 1 3 1 1280 400n
+preplace netloc axi_gpio_qword1_o_gpio2_io_o 1 3 1 1280 580n
+preplace netloc axi_gpio_qword1_o_gpio_io_o 1 3 1 N 560
+preplace netloc axi_gpio_qword2_o_gpio2_io_o 1 3 1 1300 620n
+preplace netloc axi_gpio_qword2_o_gpio_io_o 1 3 1 1290 600n
+preplace netloc rst_ps8_0_100M_peripheral_aresetn 1 1 2 650 190 980
+preplace netloc zynq_ultra_ps_e_0_pl_clk0 1 0 4 20 380 640 200 970 660 1270
+preplace netloc zynq_ultra_ps_e_0_pl_resetn0 1 0 2 30 390 630
+preplace netloc ps8_0_axi_periph_M00_AXI 1 2 1 N 390
+preplace netloc ps8_0_axi_periph_M01_AXI 1 2 1 960 70n
+preplace netloc ps8_0_axi_periph_M02_AXI 1 2 1 960 430n
+preplace netloc ps8_0_axi_periph_M03_AXI 1 2 1 990 230n
+preplace netloc ps8_0_axi_periph_M04_AXI 1 2 1 950 470n
+preplace netloc zynq_ultra_ps_e_0_M_AXI_HPM0_FPD 1 1 1 N 260
+preplace netloc zynq_ultra_ps_e_0_M_AXI_HPM1_FPD 1 1 1 N 280
+levelinfo -pg 1 0 330 800 1130 1530 1810
+pagesize -pg 1 -db -bbox -sgen 0 0 1810 840
+"
+}
+{
+   "da_axi4_cnt":"6",
+   "da_board_cnt":"10",
+   "da_zynq_ultra_ps_e_cnt":"1"
+}

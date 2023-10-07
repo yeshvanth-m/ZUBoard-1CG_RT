@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="AES128_App" location="E:/CODE/Vitis_Workspace/AES128_App" platform="E:/CODE/Vitis_Workspace/aes128_zynq_interface_wrapper/export/aes128_zynq_interface_wrapper/aes128_zynq_interface_wrapper.xpfm" platformUID="xilinx:zuboard_1cg::0.0(custom)" systemProject="AES128_App_system" sysConfig="aes128_zynq_interface_wrapper" runtime="cpp" cpu="standalone_psu_cortexa53_0" cpuInstance="psu_cortexa53_0" os="standalone" mssSignature="bb272821b725727d4aa0ddf7a08ed336">
+  <configuration name="Debug" id="xilinx.gnu.arm.a53.exe.debug.307399986">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.arm.a53.exe.release.713278136" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="hello_world"/>
+</sdkproject:SdkProject>
