@@ -58,9 +58,12 @@
 #define STAT_CTRL_OP_DIR_CH1	0x7
 #define STAT_CTRL_IP_DIR_CH2	0x0
 
-#define ENCRYPT_BIT				0x4
-#define LOAD_DATA_BIT			0x2
-#define LOAD_KEY_BIT			0x1
+#define SET_ENCRYPT_BIT			0x4
+#define CLR_ENCRYPT_BIT			0x3
+#define SET_LOAD_DATA_BIT		0x2
+#define CLR_LOAD_DATA_BIT		0x5
+#define SET_LOAD_KEY_BIT		0x1
+#define CLR_LOAD_KEY_BIT		0x6
 
 #define KEY_READY_BIT			0x1
 #define CIPHER_READY_BIT		0x2
@@ -125,12 +128,17 @@ void setup(void)
 
 void set_plainText (void)
 {
-	stat_ctrl_op |= LOAD_DATA_BIT;
-
 	aes128_qword1_o = ((aes128_plainText[0]) << 24u | (aes128_plainText[1] << 16u) | (aes128_plainText[2] << 8u) | aes128_plainText[3]);
 	aes128_qword2_o = ((aes128_plainText[4]) << 24u | (aes128_plainText[5] << 16u) | (aes128_plainText[6] << 8u) | aes128_plainText[7]);
 	aes128_qword3_o = ((aes128_plainText[8]) << 24u | (aes128_plainText[9] << 16u) | (aes128_plainText[10] << 8u) | aes128_plainText[11]);
 	aes128_qword4_o = ((aes128_plainText[12]) << 24u | (aes128_plainText[13] << 16u) | (aes128_plainText[14] << 8u) | aes128_plainText[15]);
+
+	load_data();
+}
+
+void load_data (void)
+{
+	stat_ctrl_op |= SET_LOAD_DATA_BIT;
 
 	XGpio_DiscreteWrite (&stat_ctrl, GPIO_CH_1, stat_ctrl_op);
 
@@ -139,14 +147,14 @@ void set_plainText (void)
 	XGpio_DiscreteWrite (&qword2_o, GPIO_CH_1, aes128_qword3_o);
 	XGpio_DiscreteWrite (&qword2_o, GPIO_CH_2, aes128_qword4_o);
 
-	stat_ctrl_op &= ((~LOAD_DATA_BIT) & (STAT_CTRL_BITM));
+	stat_ctrl_op &= CLR_LOAD_DATA_BIT;
 
 	XGpio_DiscreteWrite (&stat_ctrl, GPIO_CH_1, stat_ctrl_op);
 }
 
 void set_cipherKey (void)
 {
-	stat_ctrl_op |= LOAD_KEY_BIT;
+	stat_ctrl_op |= SET_LOAD_KEY_BIT;
 
 	aes128_qword1_o = ((aes128_cipherKey[0]) << 24u | (aes128_cipherKey[1] << 16u) | (aes128_cipherKey[2] << 8u) | aes128_cipherKey[3]);
 	aes128_qword2_o = ((aes128_cipherKey[4]) << 24u | (aes128_cipherKey[5] << 16u) | (aes128_cipherKey[6] << 8u) | aes128_cipherKey[7]);
@@ -160,7 +168,7 @@ void set_cipherKey (void)
 	XGpio_DiscreteWrite (&qword2_o, GPIO_CH_1, aes128_qword3_o);
 	XGpio_DiscreteWrite (&qword2_o, GPIO_CH_2, aes128_qword4_o);
 
-	stat_ctrl_op &= ((~LOAD_KEY_BIT) & (STAT_CTRL_BITM));
+	stat_ctrl_op &= CLR_LOAD_KEY_BIT;
 
 	XGpio_DiscreteWrite (&stat_ctrl, GPIO_CH_1, stat_ctrl_op);
 }
@@ -190,7 +198,7 @@ int main()
     setup ();
 
     stat_ctrl_op = 0u;
-    stat_ctrl_op |= ENCRYPT_BIT;
+    stat_ctrl_op |= SET_ENCRYPT_BIT;
 
     set_cipherKey ();
 	while (!get_keyReadyStatus());
@@ -198,6 +206,18 @@ int main()
 	set_plainText ();
 	while (!get_cipherReadyStatus());
 
+	get_cipherText ();
+
+	aes128_qword1_o = aes128_qword1_i;
+	aes128_qword2_o = aes128_qword2_i;
+	aes128_qword3_o = aes128_qword3_i;
+	aes128_qword4_o = aes128_qword4_i;
+
+	stat_ctrl_op &= CLR_ENCRYPT_BIT;
+
+	load_data ();
+
+	while (!get_cipherReadyStatus());
 	get_cipherText ();
 
     print("Hello World\n\r");
