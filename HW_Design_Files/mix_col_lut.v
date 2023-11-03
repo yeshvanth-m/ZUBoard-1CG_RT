@@ -524,6 +524,6 @@ module mul_by_3 (in, out);
         8'hfc: out = 8'h1f;
         8'hfd: out = 8'h1c;
         8'hfe: out = 8'h19;
-        8'hff: out = 8'h1;
+        8'hff: out = 8'h1a;
     endcase
 endmodule
