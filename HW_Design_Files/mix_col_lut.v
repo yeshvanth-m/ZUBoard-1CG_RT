@@ -1,3 +1,4 @@
+/* Multiply by 2 LUT */
 module mul_by_2 (in, out);
     input [7:0] in;
     output reg [7:0] out;
@@ -263,6 +264,7 @@ module mul_by_2 (in, out);
     endcase
 endmodule
 
+/* Multiply by 3 LUT */
 module mul_by_3 (in, out);
     input [7:0] in;
     output reg [7:0] out;
