@@ -1,5 +1,5 @@
 /********************************************************************************
-* @file     aes128_app.h                                                        *
+* @file     aes128_app.c                                                        *
 * @brief    AES128 application                                                  *
 * @author   Yeshvanth M  <yeshvanthmuniraj@gmail.com>                           *
 * @date     14-Oct-2023                                                         *
